@@ -1,0 +1,160 @@
+/* General body and html styles */
+body, html {
+  font-family: 'Josefin Sans','Nunito', sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: white;
+}
+
+/* Loading screen container */
+#loading-screen {
+  position: fixed;
+  top: -70px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  background-color: #000;
+  padding-top: 100px;
+}
+
+@keyframes fadeInScreen {
+  0% {opacity: 0;}
+  100% {opacity:1;}
+}
+
+/* Background video styles */
+#loading-screen video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(3px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Info box container */
+#info-box {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(32, 96, 185, 0.5); /* Dark background with less opacity */
+  border-radius: 15px;
+  padding: 20px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+  box-shadow: 0 0 20px 10px rgba(233, 231, 231, 0.5); /* Fade effect for the border */
+}
+
+@keyframes fadeInBox {
+  0% {opacity: 0;}
+  35% {opacity: 0.3;}
+  70% {opacity: 0.7;}
+  100% {opacity: 1;}
+}
+
+/* Info left section */
+.info-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.name-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.name {
+  text-align: center;
+  margin: 5px;
+  flex: 1;
+}
+
+.name p {
+  animation: fadeIn 3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Middle name styling */
+.middle {
+  text-align: center;
+  margin: 20px 0 0 0; /* Margin top to separate from the names above */
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+}
+
+/* Vertical line animation */
+.vertical-line {
+  width: 5px;
+  background-color: white;
+  height: 0;
+  margin: 0 40px; /* Move the line further right */
+  animation: growLine 2s forwards;
+}
+
+/* Right side of info box */
+.info-right {
+  flex: 1;
+  text-align: center;
+  opacity: 0;
+  animation:forwards fadeInMission 2s ease-in;
+}
+
+/* Loading GIF styling */
+#loading-gif {
+  display: block;
+  margin: 20px auto 0 auto;
+  width: 100px;
+  height: auto;
+}
+
+/* Loading text container */
+#loading-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-top: 20px;
+  padding: 0 20px; /* Add padding for better readability */
+}
+
+#loading-text p {
+  margin: 10px 0;
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  40% {opacity: 0.4;}
+  70% {opacity: 0.7;}
+  100% { opacity: 1; }
+}
+
+/* Keyframes for growing vertical line */
+@keyframes growLine {
+  0% { height: 0; }
+  100% { height: 300px; } /* Adjust height as needed */
+}
+
+@keyframes fadeInMission {
+  0% { opacity: 0; }
+  35% {opacity: 0.4;}
+  70% {opacity: 0.7;}
+  100% { opacity: 1; }
+
+}

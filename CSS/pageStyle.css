@@ -1,0 +1,71 @@
+*{
+    padding: 0px;
+    border: 0px;
+}
+.stu{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    width: auto;
+    
+}
+.info{
+    padding: 5px;
+}
+.info .h1{
+    
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+.complete .mp h3{
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    text-align: center;
+}
+.complete .mp p{
+    font-family: 'Times New Roman', Times, serif;
+    
+    text-align: center;
+}
+.complete .mp a{
+    text-align: center;
+}
+.title{
+    color: #0a2c83;
+    border-color: #fff
+}
+.btn{
+
+    display: inline-block;
+    border: 0.2rem solid #05123f;
+    color: #05123f;
+    cursor: pointer;
+    background: none;
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 50px;
+
+
+}
+.btn:hover{
+    background: #15849d;
+    color: #fff;
+}
+.button{
+    text-align: center;
+    padding: 10px 0;
+}
+.complete{
+    border-bottom: 0.2rem solid #062666;
+}
+.details{
+    /*background: #dcf3f0;*/
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(148, 142, 142, 0.7)), 
+    to(rgba(11, 11, 11, 0.7))), url(../images/pic3.jpg) no-repeat;
+    background-size: cover;
+}
+.images{
+    box-shadow: 4px 8px 6px 8px black;
+}

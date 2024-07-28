@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - OceanUs Shop</title>
+  <link rel="stylesheet" href="../CSS/checkout.css">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <ul>
+        <li><a href="../Webpages/Home.html" id="logo"><img src="../images/OceanUs.png" alt="Logo" class="logo-img">OceanUs</a></li>
+        <li class="topnav-right"><a href="../Webpages/shop.html">Return to Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="checkout-form-container">
+      <h2>Checkout Page</h2>
+      <form id="checkout-form">
+        <div id="step-1">
+          <fieldset>
+            <legend>Billing Information</legend>
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname">
+            
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname">
+            
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4"></textarea>
+            
+            <label for="postalcode">Postal Code:</label>
+            <input type="text" id="postalcode" name="postalcode">
+            
+            <label for="town">Town:</label>
+            <input type="text" id="town" name="town">
+            
+            <label for="district">District:</label>
+            <input type="text" id="district" name="district">
+            
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone">
+          </fieldset>
+          <button type="button" id="next-to-step-2">Next</button>
+        </div>
+
+        <div id="step-2" style="display: none;">
+          <fieldset>
+            <legend>Payment Information</legend>
+            <div class="card-selection">
+              <label>
+                <input type="radio" name="cardtype" value="visa">
+                <img src="../images/visa.jpeg" alt="Visa">
+              </label>
+              <label>
+                <input type="radio" name="cardtype" value="mastercard">
+                <img src="../images/mastercard.webp" alt="Mastercard">
+              </label>
+              <label>
+                <input type="radio" name="cardtype" value="amex">
+                <img src="../images/amex.jpg" alt="American Express">
+              </label>
+            </div>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+
+            <label for="cardnumber">Card Number:</label>
+            <input type="text" id="cardnumber" name="cardnumber">
+            
+            <label for="expiry">Expiry Date:</label>
+            <input type="text" id="expiry" name="expiry" placeholder="MM/YY">
+            
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv">
+          </fieldset>
+          <button type="button" id="back-to-step-1">Back</button>
+          <button type="submit">Place Order</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="order-summary-container">
+      <fieldset>
+        <legend>Order Summary</legend>
+        <div id="order-summary">
+          <!-- JavaScript will populate this section -->
+        </div>
+      </fieldset>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 OceanUs. All rights reserved.</p>
+  </footer>
+
+  <script src="../JavaScript/checkout.js"></script>
+</body>
+</html>

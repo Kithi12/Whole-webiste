@@ -1,0 +1,207 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Nunito' ,sans-serif;
+}
+
+#form{
+    background-color: whitesmoke;
+    width:450px;
+    margin: 20vh auto 10vh auto;
+    padding: 20px;
+    border-radius:20px;
+    font-size:12px;
+    display: block;
+}
+#form h1{
+    font-size: 40px;
+    color: #102d58;
+    text-align: center;
+    font-family: 'Aladin', "Lucida Console", "Courier New", monospace;
+}
+#form h2{
+    color: rgb(11, 2, 38);
+}
+
+#form button{
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    border: none;
+    background-color: #1475e4;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#form button:hover{
+    background-color: #0f0d84;
+}
+
+.selectnav{
+    border-bottom: 5px solid  #1475e4;
+}
+.input-control{
+    display: flex;
+    flex-direction: column;
+    
+}
+.input-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    font-size: 12px;
+    display: block;
+    padding: 10px;
+    width: 95%;
+}
+.input-control #selection1{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    font-size: 12px;
+    display: block;
+    padding: 10px;
+    width: 97%;
+}
+#y,#n{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    font-size: 12px;
+    display: block;
+    padding: 10px;
+    width: 97%;
+
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+.radioselection label {
+    position: relative;
+    left: 15px;
+    display: block;
+    padding: 10px 0;
+
+}
+.radioselection label #y,#n{
+   position: absolute;
+   top: 16px;;
+   left:-160px;
+}
+
+label{
+    margin: 3px 0;
+    font-size: 16px;
+}
+.popup .overlay{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:1000vw;
+    height: 1000vh;
+    background:rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+}
+.popup.active .overlay{
+    display: block;
+
+}
+
+.popup .content{
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%,-50%)scale(0);
+    background: #fff;
+    width:450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;    
+}
+.popup.active .content{
+    transition:all 300ms ease-in-out;
+    transform: translate(-50%,-50%)scale(1);
+}
+
+.popup .close-btn{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width:30px;
+    height:30px;
+    background: gray;
+    color:#fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+}
+.popup .close-btn a{
+    color: darkred;
+    text-decoration: none;
+}
+
+#popup-1 img{
+    width: 20%;
+}
+
+.rating-box .stars{
+    position: relative;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.stars i{
+    color: #d4d3d3;
+    font-size: 35px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.stars i.active{
+    color: gold;
+}
+textarea{
+    border: gray;
+    position: relative;
+    left:15%;
+}
+
+.error-stars {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; 
+    pointer-events: none; 
+    
+    
+
+}#popup-1 h2{
+    padding: 10px;
+    font-size: 30px;
+}

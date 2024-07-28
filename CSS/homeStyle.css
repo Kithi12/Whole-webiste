@@ -1,0 +1,257 @@
+
+
+/*---------Header section-----------*/
+.header{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0px;
+    padding: 2px 5%;
+    z-index: 700;
+    display: flex;
+    align-items: center;
+    background-color: rgb(32, 149, 188);
+}
+
+.header.active{
+    background: rgb(32, 149, 188);
+    box-shadow: 0 8px 16px rgb(6, 24, 110);
+}
+
+.header .logo{
+    margin-right: auto;
+    font-family: 'Allura',cursive,sans-serif;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.4s;
+    margin-right: 20px;
+}
+
+.header .logo img{
+    border-radius: 40px;
+    width: 50px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.header .navbar{
+    flex: 1;
+    text-align: right;
+
+}
+.header .navbar a{
+    display: inline-block;
+    margin-left: 21px;
+    padding: 8px 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+.header .navbar a:hover{
+    background-color: transparent;
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+    color: rgb(6, 24, 110);
+}
+.header .navbar a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:rgb(6, 24, 110);
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+    transition: 0.5s;
+
+}
+.header .navbar a:hover::after{
+    width: 100%;  
+}
+.header .navbar #nav-close{
+    font-size: 32px;
+    cursor: pointer;
+    color:white;
+    display: none;
+}
+
+.header #menu-btn{
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+.header .icon a,
+.header .icon div{
+    font-size: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+
+.header .icon a:hover,
+.header .icon div:hover{
+    background-color: transparent;
+    transform: scale(1.4);
+    transition: transform 0.3s ease-in-out;
+    color:rgb(6, 24, 110);
+}
+
+
+
+@media (max-width:1200px){
+    .header{
+        padding: 8px;
+    }
+    
+    section{
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+        scroll-padding-top: 7rem;
+    }
+}
+
+@media (max-width:768px){
+    .header #menu-btn{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: fixed;
+        top: 0;
+        left: -110%;
+        background: rgb(32, 149, 188);
+        z-index: 1000;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header .navbar a{
+        margin: 16px 0;
+        font-size: 20px;
+    }
+    .header .navbar a:hover::after{
+        width: 0%;
+    }
+    .header .navbar #nav-close{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 24px;
+    }
+    .header .navbar.active{
+        left: 0;
+        box-shadow: 0 0 0 100vw white;
+    }
+}
+
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+    .header .logo img {
+        max-width: 60px; 
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .header {
+     font-size:14px;
+    }
+  }
+  
+/*----------End header----------*/
+
+
+
+
+
+/*----------Footer-----------------------------------------------------*/
+/* Footer styles */
+.footer {
+    background-image: url("../images/footer1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    color: #fff;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    text-align: center;
+}
+
+.footer .box h3 {
+    font-size: 20px;
+    padding: 8px 0;
+    color: #030202;
+}
+
+.footer .box a {
+    display: block;
+    font-size: 14.5px;
+    color: #0e0404;
+    padding: 13px 0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .box a i {
+    color: #21b3bb;
+    padding-right: 8px;
+}
+
+.footer .box a:hover {
+    color: #21b3bb;
+}
+
+.footer .box a:hover i {
+    padding-right: 22px;
+}
+
+.footer .row {
+    text-align: center;
+    color: #fff;
+    background-color: rgb(8, 44, 72);
+    padding: 10px 0;
+    margin-top: 20px;
+    position: fixed;
+}
+
+.footer .row a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .row a:hover {
+    color: #2cf4ff;
+}
+
+
+/*--------Footer end---------*/

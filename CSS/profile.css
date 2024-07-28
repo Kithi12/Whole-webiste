@@ -1,0 +1,369 @@
+/* style.css */
+
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*---------Header section-----------*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2px 5%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background-color: rgb(32, 149, 188);
+}
+
+.header.active {
+    background: rgb(32, 149, 188);
+    box-shadow: 0 8px 16px rgb(6, 24, 110);
+}
+
+.header .logo {
+    margin-right: auto;
+    color: aliceblue;
+    font-family: 'Allura', cursive, sans-serif;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    max-width: 80px;
+    height: auto;
+}
+
+.header .navbar {
+    flex: 1;
+    text-align: right;
+}
+
+.header .navbar a {
+    display: inline-block;
+    margin-left: 21px;
+    padding: 8px 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header .navbar a:hover {
+    color: rgb(6, 24, 110);
+}
+
+.header .navbar a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(6, 24, 110);
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.header .navbar a:hover::after {
+    width: 100%;
+}
+
+.header .navbar #nav-close {
+    font-size: 32px;
+    cursor: pointer;
+    color: white;
+    display: none;
+}
+
+.header #menu-btn {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+.header .icon a,
+.header .icon div {
+    font-size: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.header .icon a:hover,
+.header .icon div:hover {
+    color: rgb(6, 24, 110);
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 8px;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+        scroll-padding-top: 7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: fixed;
+        top: 0;
+        left: -110%;
+        background: rgb(32, 149, 188);
+        z-index: 1000;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header .navbar a {
+        margin: 16px 0;
+        font-size: 20px;
+    }
+
+    .header .navbar a:hover::after {
+        width: 0%;
+    }
+
+    .header .navbar #nav-close {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 24px;
+    }
+
+    .header .navbar.active {
+        left: 0;
+        box-shadow: 0 0 0 100vw white;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    .header .logo img {
+        max-width: 60px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .header {
+        font-size: 14px;
+    }
+}
+
+/*----------End header----------*/
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+/* Container styling */
+.form-box {
+    width: 500px;
+    padding: 20px;
+    text-align: center;
+    background: #d4e7ff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress bar styling */
+.progress-container {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.progress-container .progreeDiv {
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 5px;
+}
+
+.progress-container .progressBar {
+    width: 0;
+    height: 10px;
+    background: hsl(0, 4%, 16%);
+    border-radius: 5px;
+}
+
+.progress-container #progress-title {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Section containers */
+.register-container,
+.user-details-container,
+.edu-container,
+.quest-container,
+.contact-container {
+    margin-bottom: 20px;
+}
+
+.register-container h3,
+.user-details-container h3,
+.edu-container h3,
+.quest-container h3,
+.contact-container h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Paragraph and span styling */
+p,
+span {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+a {
+    color: hsl(210, 100%, 79%);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button styling */
+.btn-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+button.submit {
+    padding: 10px 20px;
+    background: hsl(210, 100%, 79%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button.submit:hover {
+    background: rgb(32, 149, 188);
+}
+
+button.submit:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .form-box {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/*----------Footer-----------------------------------------------------*/
+.footer {
+    background-image: url(../images/footer1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer .box-container .box h3 {
+    font-size: 20px;
+    padding: 8px 0;
+    color: #fff;
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 14.5px;
+    color: #fff;
+    padding: 13px 0;
+    text-decoration: none;
+}
+
+.footer .box-container .box a i {
+    color: #21b3bb;
+    padding-right: 8px;
+}
+
+.footer .box-container .box a:hover {
+    color: #21b3bb;
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 22px;
+}
+
+.footer .row {
+    text-align: center;
+    color: #fff;
+    background-color: rgb(8, 44, 72);
+    padding: 2px 0;
+    width: 100%;
+    margin: 0;
+}
+
+.footer .row a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .row a:hover {
+    color: #2cf4ff;
+}
+
+/*--------Footer end---------*/
