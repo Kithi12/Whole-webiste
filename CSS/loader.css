@@ -50,7 +50,7 @@ body, html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(32, 96, 185, 0.5); /* Dark background with less opacity */
+  background-color: rgba(32, 96, 185, 0.5);
   border-radius: 15px;
   padding: 20px;
   width: 80%;
@@ -94,7 +94,7 @@ body, html {
 /* Middle name styling */
 .middle {
   text-align: center;
-  margin: 20px 0 0 0; /* Margin top to separate from the names above */
+  margin: 20px 0 0 0;
   opacity: 0;
   animation: fadeIn 3s ease-in-out forwards;
 }
@@ -108,7 +108,6 @@ body, html {
   animation: growLine 2s forwards;
 }
 
-/* Right side of info box */
 .info-right {
   flex: 1;
   text-align: center;
@@ -130,7 +129,7 @@ body, html {
   z-index: 2;
   text-align: center;
   margin-top: 20px;
-  padding: 0 20px; /* Add padding for better readability */
+  padding: 0 20px;
 }
 
 #loading-text p {
