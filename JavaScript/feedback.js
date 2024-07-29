@@ -37,6 +37,7 @@ const showPopup = () => {
 
 const closePopup = () => {
     popup.classList.remove('active');
+    
 };
 
 const setErrorStars=(message) =>{
