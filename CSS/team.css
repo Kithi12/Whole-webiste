@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 
    }
   
@@ -32,8 +31,8 @@
 
 .header .logo{
   margin-right: auto;
-  color: aliceblue;
-  font-family: 'Allura',cursive,sans-serif;
+  color: white;
+  font-family: 'Allura', cursive, sans-serif;
   font-size: 3rem;
   display: flex;
   align-items: center;
@@ -51,6 +50,7 @@
 }
 .header .navbar a{
   display: inline-block;
+  font-family: 'Figtree', cursive, sans-serif;
   margin-left: 21px;
   padding: 8px 8px;
   color: white;

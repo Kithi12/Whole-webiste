@@ -22,8 +22,7 @@
   font-size: 3rem;
   display: flex;
   align-items: center;
-  background-color: white;
-  border-radius: 20px;
+  color: white;
   font-weight: bold;
   transition: 0.4s;
   margin-right: 20px;
