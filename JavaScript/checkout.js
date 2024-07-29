@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const address = checkoutForm.address.value.trim();
     const postalcode = checkoutForm.postalcode.value.trim();
     const town = checkoutForm.town.value.trim();
-    const district = checkoutForm.district.value.trim().toLowerCase(); // Convert to lowercase
+    const district = checkoutForm.district.value.trim().toLowerCase();
     const phone = checkoutForm.phone.value.trim();
     
     const namePattern = /^[a-zA-Z\s]+$/;
