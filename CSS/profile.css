@@ -29,8 +29,8 @@
 .header .logo {
     margin-right: auto;
     color: aliceblue;
+    font-size: 44px;
     font-family: 'Allura', cursive, sans-serif;
-    font-size: 3rem;
     display: flex;
     align-items: center;
 }
